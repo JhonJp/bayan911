@@ -1,0 +1,539 @@
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 30px rgb(163, 37, 37), inset 0 0 30px #FF3636;
+  }
+  50% {
+    box-shadow: 0 0 100px rgb(163, 37, 37), inset 0 0 100px #FF3636;
+  }
+  100% {
+    box-shadow: 0 0 30px rgb(163, 37, 37), inset 0 0 30px #FF3636;
+  }
+}
+
+@-webkit-keyframes pulse_blue {
+  0% {
+    box-shadow: 0 0 30px #FF3636, inset 0 0 30px #FF3636;
+  }
+  50% {
+    box-shadow: 0 0 100px #FF3636, inset 0 0 100px #FF3636;
+  }
+  100% {
+    box-shadow: 0 0 30px #FF3636, inset 0 0 30px #FF3636;
+  }
+}
+
+@-webkit-keyframes pulse_rate {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 34, 34, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(241, 34, 34, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(241, 34, 34, 0);
+  }
+}
+
+.fixed_bot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff3636;
+  color: white;
+  height: 80px;
+  text-align: center;
+  box-shadow: 0 0 20px #797979;
+}
+
+.fixed_bot_second {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff3636;
+  color: white;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px #797979;
+}
+
+.roundeed_bot {
+  height: 65px;
+  box-shadow: 0 10px 20px #bebebe;
+}
+
+.roundeed_top {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.grid-cont {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-cont button {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  height: 100%;
+  width: 95%;
+}
+
+.grid-cont-two-row {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-cont-two-row button {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-contact {
+  display: inline-grid;
+  grid-template-columns: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.gr-item {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
+
+.gr-item_rounded {
+  font-size: 25px;
+  text-align: center;
+  padding: 0px;
+}
+
+.gr-item p {
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 2px 0px 2px;
+}
+
+.gr-item_rounded p {
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 2px 0px 2px;
+  font-weight: initial;
+  color: #191818;
+}
+
+.sos_btn {
+  height: 11em;
+  width: 11em;
+  border-radius: 120px !important;
+  box-shadow: 0 0 40px #FF3636, inset 0 0 40px #FF3636;
+  -webkit-animation: pulse 1.5s linear 1s infinite;
+}
+
+.active {
+  background-color: hsla(0, 0%, 100%, .2);
+  color: #fff;
+}
+
+.search-bar {
+  width: 84%;
+  margin-top: 2%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 0px 5px 15px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-bar:focus {
+  margin-top: 8%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  width: 98%;
+}
+
+.chip {
+  display: inline-block;
+  padding: 10px 40px;
+  height: 70px;
+  font-size: 16px;
+  line-height: 50px;
+  /* background: #f7f7f7; */
+  color: #2f2e2e;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.callbtn {
+  color: #888;
+  float: right;
+  cursor: pointer;
+}
+
+.callbtn:hover {
+  color: #000;
+}
+
+.txt {
+  line-height: 47px;
+  padding: 0px;
+  height: 45px;
+}
+
+.txt h6{
+  width: 90%;
+  font-style: normal;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4em;
+}
+
+.panel p {
+  line-height: 1.61em;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.1em; 
+}
+
+.floating-fab {
+  display: inline-block;
+  position: fixed;
+  width: 50px;
+  height: 40px;
+  right: 35px;
+  bottom: 65px;
+  z-index: 1000000;
+  cursor: pointer;
+}
+
+.floating-button {
+  height: 4.375rem;
+  min-width: 4.375rem;
+  width: 4.375rem;
+  padding: 0;
+  font-size: 0.9375rem;
+  overflow: hidden;
+  position: relative;
+  line-height: normal;
+  border-radius: 50%;
+}
+
+.cd-nav-trigger {
+  position: fixed;
+  bottom: 16%;
+  right: 3%;
+  width: 44px;
+  height: 44px;
+  background: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.cd-nav-trigger span {
+  /* the span element is used to create the menu icon */
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #333333;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, background 0s;
+  -moz-transition: -moz-transform 0.3s, background 0s;
+  transition: transform 0.3s, background 0s;
+}
+
+.cd-nav-trigger span::before {
+  top: -6px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.cd-nav-trigger span::after {
+  bottom: -6px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.cd-nav-trigger.menu-is-open {
+  box-shadow: none;
+}
+
+.cd-nav-trigger.menu-is-open span {
+  background: rgba(232, 74, 100, 0);
+}
+
+.cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
+  background: #333333;
+}
+
+.cd-nav-trigger.menu-is-open span::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.cd-nav-trigger.menu-is-open span::after {
+  bottom: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* --------------------------------
+
+Smart fixed navigation
+
+-------------------------------- */
+
+#cd-nav ul {
+  /* mobile first */
+  position: fixed;
+  /* width: 50%; */
+  padding:0;
+  max-width: 250px;
+  max-height: 45%;
+  right: 15%;
+  bottom: 13%;
+  background: white;
+  visibility: hidden;
+  /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 1;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+}
+
+#cd-nav ul li {
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*display: block;*/
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+#cd-nav ul li:hover {
+  background-color: #FFF;
+}
+
+#cd-nav ul.is-visible {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+}
+
+#cd-nav li a {
+  display: block;
+  color: #191818;
+  padding: 1em;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eff2f6;
+}
+
+#cd-nav li a:hover {
+  color: #333333;
+}
+
+#cd-nav li:last-child a {
+  border-bottom: none;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.geocoder {
+  position:absolute;
+  z-index:1;
+  width:75%;
+  top:11%;
+  left: 5%;
+}
+
+.mapboxgl-ctrl-geocoder { min-width:100%; }
+
+.truck {
+  margin: -10px -10px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #235da3;
+  pointer-events: none;
+  box-shadow: 0 0 40px #235da3, inset 0 0 40px #235da3;
+  -webkit-animation: pulse_blue 1.5s linear 1s infinite;
+}
+
+.warning_signal {
+  /* margin: -10px -10px; */
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #ff3636;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(241, 34, 34, 0.4);
+  animation: pulse_rate 2s infinite;
+}
+
+.warning_signal:hover {
+  animation: none;
+}
+
+/* Marker tweaks */
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+.mapboxgl-popup-content p {
+  background: #ff3636;
+  color: #fff;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.mapboxgl-popup-content a {
+  background: #fff;
+  color: #ff00;
+  margin: 0;
+  display: block;
+  /* padding: 10px; */
+  font-weight: 700;
+  text-align: center;
+}
+
+.mapboxgl-popup-content small {
+  font-weight: 500;
+  color: #000;
+  margin: 10px;
+  /* padding: 14px; */
+  display: block;
+  font-size: 15px;
+}
+
+.mapboxgl-popup-content h4 {
+  margin: 0;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #ff3636;
+}
+
+.back_bg {
+  /* background:url('./assets/images/bg.png') no-repeat; */
+  background: #f7f7f7;
+  background-size: cover;
+  background-position:cover;
+  background-attachment:fixed
+}
+
+.back_home {
+  background:url('./assets/images/bg.png') no-repeat;
+  background-size: cover;
+  background-position:cover;
+  background-attachment:fixed
+}

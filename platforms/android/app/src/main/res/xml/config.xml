@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.project.bayan" version="1.0.0" xmlns="http://./www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+    <feature name="CallNumber">
+        <param name="android-package" value="com.rohithvaranasi.callnumber.CFCallNumber" />
+    </feature>
+    <feature name="DocumentHandler">
+        <param name="android-package" value="ch.ti8m.phonegap.plugins.DocumentHandler" />
+    </feature>
+    <feature name="SitewaertsDocumentViewer">
+        <param name="android-package" value="de.sitewaerts.cordova.documentviewer.DocumentViewerPlugin" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <name>Bayan 911</name>
+    <description>
+        Bayan 911 Emergency Response Application
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        Microbiz One Inc.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="cdvfile://*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="geo:*" />
+    <icon density="ldpi" src="./www/assets/images/sc_icons/icon-144x144.png" />
+    <icon density="mdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <icon density="hdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <icon density="xhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <icon density="xxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <icon density="xxxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="land-ldpi" src="./www/assets/images/sc_icons/icon-144x144.png" />
+    <splash density="land-mdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <splash density="land-hdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <splash density="land-xhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="land-xxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="land-xxxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="port-ldpi" src="./www/assets/images/sc_icons/icon-144x144.png" />
+    <splash density="port-mdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <splash density="port-hdpi" src="./www/assets/images/sc_icons/icon-152x152.png" />
+    <splash density="port-xhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="port-xxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <splash density="port-xxxhdpi" src="./www/assets/images/sc_icons/icon-256x256.png" />
+    <allow-intent href="market:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" launch-external="yes" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="FadeSplashScreenDuration" value="0" />
+    <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
+    <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+</widget>

@@ -1,0 +1,64 @@
+{
+  "_from": "polarcape-cordova-plugin-document-handler",
+  "_id": "polarcape-cordova-plugin-document-handler@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha512-eYR1bZ8OOjXqSWSFGYGb5fwFe0EnhRPJFbLC0m4YwQKIpT9f7NrxjA5boQkUMFrrT75lULyMGQMKqIeIE+xHHA==",
+  "_location": "/polarcape-cordova-plugin-document-handler",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "polarcape-cordova-plugin-document-handler",
+    "name": "polarcape-cordova-plugin-document-handler",
+    "escapedName": "polarcape-cordova-plugin-document-handler",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/polarcape-cordova-plugin-document-handler/-/polarcape-cordova-plugin-document-handler-1.0.14.tgz",
+  "_shasum": "cc29070847fca0e4351b1b2a280c40302379d0dc",
+  "_spec": "polarcape-cordova-plugin-document-handler",
+  "_where": "C:\\Users\\Admin\\Desktop\\cordovaApp\\Bayan 911",
+  "author": {
+    "name": "Polar Cape",
+    "email": "info@polarcape.com",
+    "url": "http://polarcape.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "polarcape-cordova-plugin-document-handler",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "A phonegap plugin to handle documents (f.e. PDFs) loaded from a URL.",
+  "homepage": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler",
+  "keywords": [
+    "polarcape",
+    "cordova",
+    "pdf"
+  ],
+  "license": "MIT",
+  "main": "www/DocumentHandler.js",
+  "name": "polarcape-cordova-plugin-document-handler",
+  "peerDependencies": {
+    "cordova-plugin-file": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolarCape/polarcape-cordova-plugin-document-handler.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.14"
+}

@@ -1,0 +1,60 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "call-number": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "polarcape-cordova-plugin-document-handler": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-document-viewer": {
+      "PACKAGE_NAME": "com.project.bayan"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.project.bayan"
+    }
+  },
+  "dependent_plugins": {}
+}

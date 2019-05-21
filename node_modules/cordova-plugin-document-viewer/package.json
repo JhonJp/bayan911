@@ -1,0 +1,67 @@
+{
+  "_from": "cordova-plugin-document-viewer@0.9.10",
+  "_id": "cordova-plugin-document-viewer@0.9.10",
+  "_inBundle": false,
+  "_integrity": "sha1-vZcFoqCkGfs04ehWTn81al10c8Y=",
+  "_location": "/cordova-plugin-document-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-document-viewer@0.9.10",
+    "name": "cordova-plugin-document-viewer",
+    "escapedName": "cordova-plugin-document-viewer",
+    "rawSpec": "0.9.10",
+    "saveSpec": null,
+    "fetchSpec": "0.9.10"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-document-viewer/-/cordova-plugin-document-viewer-0.9.10.tgz",
+  "_shasum": "bd9705a2a0a419fb34e1e8564e7f356a5d7473c6",
+  "_spec": "cordova-plugin-document-viewer@0.9.10",
+  "_where": "C:\\Users\\Admin\\Desktop\\cordovaApp\\Bayan 911",
+  "author": {
+    "name": "Felix Schauerte"
+  },
+  "bugs": {
+    "url": "https://github.com/sitewaerts/cordova-plugin-document-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-document-viewer",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "PDF Document viewer cordova plugin for iOS, Android and Windows 8.1 + 10",
+  "engines": {
+    "cordovaDependencies": {
+      "0.9.10": {
+        "cordova": ">=3.7.0",
+        "cordova-windows": ">=4.4.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/sitewaerts/cordova-plugin-document-viewer#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "pdf"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-document-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitewaerts/cordova-plugin-document-viewer.git"
+  },
+  "version": "0.9.10"
+}
