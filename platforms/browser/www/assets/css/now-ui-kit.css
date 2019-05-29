@@ -6540,7 +6540,7 @@ img {
     flex-direction: row-reverse;
   }
   .sidebar-collapse .navbar .navbar-nav {
-    margin-top: 53px;
+    /*margin-top: 53px;*/
     position: relative;
     max-height: calc(100vh - 75px);
     min-height: 100%;

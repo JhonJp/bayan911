@@ -76,6 +76,13 @@ width=device-width, height=device-height" />
       <div class="collapse navbar-collapse justify-content-end" id="navigation" style="width:70%;background:#ff3636;">
         <ul class="navbar-nav">
           <li class="nav-item">
+              <div class="upper_nav col-sm-2">
+                <img src="../../assets/images/sc_icons/avatar.png" class="rounded img-raised">
+                <h6>Loremen De Bien</h6>
+                <p>Software Developer</p>
+              </div>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./homepage.html">
               <i class="now-ui-icons business_bank"></i>
               <p>Home</p>
@@ -106,13 +113,19 @@ width=device-width, height=device-height" />
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="./guide_card.html">
+                    <i class="now-ui-icons media-1_album"></i>
+                    <p class="d-lg-none d-xl-none">GUIDE CARDS</p>
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./news_updates.html">
                     <i class="now-ui-icons location_world"></i>
                     <p class="d-lg-none d-xl-none">News and Updates</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="./terms_conditions.html">
                     <i class="now-ui-icons business_badge"></i>
                     <p class="d-lg-none d-xl-none">Terms and Conditions</p>
                 </a>
@@ -133,25 +146,37 @@ width=device-width, height=device-height" />
         <div class="content brand"><!-- style="margin-top:5%;" -->
               <!-- Add Contents Here -->
               <div class="grid-cont-two-row" id="doc_types"><!-- style="margin-top:10%;" -->
-                <!-- <div class="groups" onclick="">
-                  <div class="gr-item">
-                    <i class="fa fa-file-alt"></i>
-                  </div>
-                  <p>A</p>
-                </div> -->
               </div>
-              <!-- END OF CONTENT -->
               <!-- FLOATING BUTTON  -->
-              <!-- <div class="floating-fab" id="fab">
-                <button class="floating-button btn btn-danger">
+              <div class="floating-fab" id="fab">
+                <button id="add_docs" class="floating-button btn btn-danger">
                   <i class="now-ui-icons ui-1_simple-add"></i>
                 </button>
-              </div>-->
+              </div>
               <!--// FLOATING BUTTON  -->
         </div>
       </div>
     </div>
   </div>
+
+  <!-- MODAL ADD -->
+  <div class="modal fade modal-mini" id="offline" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true" style="display: none; padding-right: 17px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <div class="modal-profile">
+                <i id="loader_icon" class="now-ui-icons loader_refresh spin"></i>
+            </div>
+          </div>
+          <div class="modal-body justify-content-center">
+              <h6 id="loader_txt" style="text-align:center;text-transform:none;">No Internet Connection</h6>
+              <p style="font-size:15px;">Trying to reconnect to the internet....</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END MODAL -->
+
   <!--   Core JS Files   -->
   <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <!-- <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script> -->
@@ -162,8 +187,10 @@ width=device-width, height=device-height" />
   <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
   <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+ 
+  <!--  DOCS KIT JS    -->
+  <script src="../../assets/js/docskit.js" type="text/javascript"></script>
+ 
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="../../assets/js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
   
@@ -172,6 +199,7 @@ width=device-width, height=device-height" />
 
   <script type="text/javascript" src="../../cordova.js"></script>
   <script type="text/javascript" src="../../assets/js/index.js"></script>
+  <script type="text/javascript" src="../../assets/js/network.js"></script>
   <script type="text/javascript">
       app.initialize();
   </script>
@@ -183,46 +211,6 @@ width=device-width, height=device-height" />
     function onBackKeyDown() {
          window.location = './homepage.html';
     }
-    function filter() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("search");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("doc_types");
-        li = ul.getElementsByTagName("div");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("p")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-</script>
-<script>
-    $.ajax({
-      url: "https://jsonplaceholder.typicode.com/albums",
-      success: function(result){
-        var tag = "";
-        for (var i = 0; i < result.length; i++){
 
-            var title = result[i].title;
-
-            //append data to tag html
-            tag += "<div class=\"groups\">"+
-                "<a onclick=\"window.open('http://beta.gpexpresscargo.com/filetest.pdf','_system','location=yes'); return false;\">"+
-                  "<div class=\"gr-item\">"+
-                  "<i class=\"now-ui-icons files_single-copy-04\"></i>"+
-                "</div>"+
-                "<p>"+title.substring(1, 10)+"...</p></a>"+
-              "</div>";
-        }
-        //insert data into view
-        document.getElementById('doc_types').innerHTML = tag;
-      },
-      error: function(){
-      }
-    });
 </script>
 </html>

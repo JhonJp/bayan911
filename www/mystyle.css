@@ -537,3 +537,29 @@ Smart fixed navigation
   background-position:cover;
   background-attachment:fixed
 }
+
+.upper_box {
+  background: #404040;
+  height: 25%;
+}
+
+.upper_nav {
+  height: 200px;
+  color: #fff;
+  padding: 5%;
+  padding-top: 10%;
+  border-bottom: double;
+  background:url('../../assets/images/rd1.jpg') no-repeat;
+}
+
+.upper_nav img {
+  padding-top: 5%;
+}
+
+.upper_nav h6 {
+  padding-top: 15%;
+}
+
+.upper_nav p {
+  padding-top: 5%;
+}
