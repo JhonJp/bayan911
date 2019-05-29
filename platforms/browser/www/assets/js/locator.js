@@ -19,6 +19,8 @@ var geolocate = new mapboxgl.GeolocateControl({
        trackUserLocation: true
 });
 
+map.addControl(geolocate);
+
 geolocate.on('geolocate', function(e) {
      var lon = e.coords.longitude;
      var lat = e.coords.latitude;
@@ -29,8 +31,6 @@ geolocate.on('geolocate', function(e) {
           .setLngLat([lon, lat])
           .addTo(map);
 });
-
-map.addControl(geolocate);
 
 var warnings = {
      "type": "FeatureCollection",

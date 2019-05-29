@@ -11,4 +11,5 @@ document.addEventListener("offline", onOffline, false);
   function onOnline() {
       // Handle the online event
       $('#offline').removeClass('show');
+      $('#offline').attr('style','display:none;');
   }
